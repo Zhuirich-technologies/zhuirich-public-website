@@ -136,7 +136,168 @@ footer {
   nav a { font-size: 12px; }
   .hero { min-height: 500px; padding: 75px 6%; }
 }
-</style>
+
+    /* ZHUIRICH PREMIUM CORPORATE UPGRADE */
+    :root {
+      --navy: #061326;
+      --navy2: #10243d;
+      --gold: #d8b66f;
+      --white: #ffffff;
+      --muted: #b9c5d5;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(ellipse at 50% 0%, #142b46 0%, #061326 55%);
+      letter-spacing: 0.1px;
+    }
+
+    header {
+      background: rgba(6, 19, 38, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(216, 182, 111, 0.25);
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
+
+    .logo {
+      color: var(--gold);
+      letter-spacing: 2.5px;
+      font-size: 15px;
+    }
+
+    nav { gap: 19px; }
+
+    nav a {
+      color: #e5eaf1;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: var(--gold);
+    }
+
+    body > div img {
+      border: 1px solid rgba(216, 182, 111, 0.35);
+      box-shadow: 0 20px 55px rgba(0, 0, 0, .3);
+    }
+
+    section { padding-top: 95px; padding-bottom: 95px; }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 50% 35%, rgba(30, 61, 91, .75), transparent 65%);
+      text-align: center;
+    }
+
+    .hero h1 {
+      max-width: 950px;
+      margin: 20px auto;
+      font-size: clamp(39px, 7vw, 76px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+    }
+
+    .hero p,
+    .intro {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    h2 {
+      letter-spacing: -0.7px;
+      font-size: clamp(29px, 4vw, 43px);
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 14px 25px;
+      letter-spacing: .4px;
+      transition: transform .2s, background .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #f0d18e;
+    }
+
+    .card {
+      border: 1px solid rgba(216, 182, 111, .2);
+      border-radius: 13px;
+      background: linear-gradient(145deg, #122943, #0b1b30);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .13);
+      padding: 32px;
+    }
+
+    .card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, .24);
+    }
+
+    .card h3 { letter-spacing: 1.5px; }
+
+    .feature {
+      background: rgba(12, 29, 50, .72);
+      border-color: rgba(216, 182, 111, .14);
+    }
+
+    .motto {
+      border-top: 1px solid rgba(216, 182, 111, .2);
+      border-bottom: 1px solid rgba(216, 182, 111, .2);
+    }
+
+    .contact {
+      padding-top: 105px;
+      padding-bottom: 105px;
+    }
+
+    footer {
+      line-height: 2;
+      background: #040e1d;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    @media(max-width: 650px) {
+      header { padding: 16px 5%; }
+      nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+      }
+      nav a { font-size: 12px; }
+      section { padding: 65px 6%; }
+      .hero { min-height: 440px; }
+      .hero h1 { letter-spacing: -1px; }
+      .card { padding: 25px; }
+    }
+
+    @media(prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+    
+  </style>
 </head>
 <body>
 
