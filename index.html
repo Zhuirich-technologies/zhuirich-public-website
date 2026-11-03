@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zhuirich Technologies is building a vision for connected global finance through blockchain innovation and next-generation financial infrastructure.">
+<title>Zhuirich Technologies | Global Financial Innovation</title>
+<style>
+:root {
+  --navy: #071426;
+  --navy2: #10233b;
+  --gold: #d5b16a;
+  --white: #ffffff;
+  --muted: #b3bfd0;
+}
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--navy);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #071426;
+  border-bottom: 1px solid #263950;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: var(--gold);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+nav { display: flex; flex-wrap: wrap; gap: 18px; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 570px;
+  padding: 110px 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at top, #203b5b, #071426 70%);
+}
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(40px, 7vw, 76px);
+  line-height: 1.12;
+  margin: 25px 0;
+}
+h2 {
+  color: var(--gold);
+  font-size: clamp(27px, 4vw, 39px);
+}
+.hero p, .intro {
+  max-width: 730px;
+  color: var(--muted);
+}
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 27px;
+  border-radius: 4px;
+  background: var(--gold);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: bold;
+}
+section { padding: 85px 8%; }
+.center { text-align: center; }
+.muted { color: var(--muted); }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+.card {
+  background: var(--navy2);
+  border: 1px solid #2b4059;
+  border-radius: 10px;
+  padding: 30px;
+  transition: transform .2s, border-color .2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+.card h3 { color: var(--gold); font-size: 23px; }
+.feature {
+  background: #0c1d32;
+  border-top: 1px solid #293b50;
+  border-bottom: 1px solid #293b50;
+}
+.motto {
+  text-align: center;
+  background: #10233b;
+}
+.motto h2 { font-size: clamp(30px, 5vw, 47px); }
+.founder {
+  border-top: 2px solid var(--gold);
+}
+.contact {
+  text-align: center;
+  background: radial-gradient(ellipse at center, #18324e, #071426 75%);
+}
+footer {
+  padding: 35px 8%;
+  text-align: center;
+  border-top: 1px solid #293b50;
+  color: var(--muted);
+  font-size: 13px;
+}
+@media(max-width:650px) {
+  header { flex-direction: column; gap: 14px; }
+  nav { justify-content: center; gap: 12px; }
+  nav a { font-size: 12px; }
+  .hero { min-height: 500px; padding: 75px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ZHUİRICH TECHNOLOGIES</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#vision">Vision</a>
+    <a href="#founders">Founders</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="eyebrow">THE FUTURE OF CONNECTED FINANCE</div>
+  <h1>Connecting Finance<br>Without Boundaries.</h1>
+  <p>
+    A new vision for global financial connectivity,
+    intelligent infrastructure and blockchain-powered
+    financial innovation.
+  </p>
+  <a class="button" href="#ecosystem">Discover Our Ecosystem</a>
+</section>
+
+<section id="about" class="center">
+  <div class="eyebrow">WHO WE ARE</div>
+  <h2>Beyond Traditional Finance</h2>
+  <p class="intro">
+    Zhuirich Technologies is developing a vision for
+    interconnected financial infrastructure. Our proposed
+    ecosystem brings together payment technology,
+    financial intelligence, digital innovation and
+    security-focused architecture.
+  </p>
+</section>
+
+<section id="ecosystem" class="feature">
+  <div class="center">
+    <div class="eyebrow">OUR TECHNOLOGY ARCHITECTURE</div>
+    <h2>Introducing the Zhuirich Ecosystem</h2>
+    <p class="muted">
+      Three proposed technology pillars supporting our
+      vision for connected global finance.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>QUANTUM</h3>
+      <p class="muted">
+        A proposed universal payment-card and
+        financial-control ecosystem designed for
+        individuals, professionals, businesses
+        and institutions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>ZETA</h3>
+      <p class="muted">
+        A proposed interconnected infrastructure
+        architecture designed to support the wider
+        Zhuirich financial technology ecosystem.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>ZIAS</h3>
+      <p class="muted">
+        A proposed security architecture focused
+        on authentication, transaction integrity
+        and protection across the ecosystem.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="center">
+  <div class="eyebrow">OUR PURPOSE</div>
+  <h2>Vision & Mission</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p class="muted">
+        To contribute to a more connected,
+        accessible and intelligent global
+        financial future.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p class="muted">
+        To design innovative financial technology
+        infrastructure that brings together
+        payments, intelligence and security.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="founders" class="feature center">
+  <div class="eyebrow">LEADERSHIP</div>
+  <h2>Our Founders</h2>
+  <div class="cards">
+    <div class="card founder">
+      <h3>Mr. Zuriich</h3>
+      <p class="muted">Founder</p>
+    </div>
+    <div class="card founder">
+      <h3>Mr. Zhang</h3>
+      <p class="muted">Co-founder</p>
+    </div>
+  </div>
+</section>
+
+<section class="motto">
+  <div class="eyebrow">FOUNDER'S MOTTO</div>
+  <h2>Blockchain Financing (B/F)</h2>
+  <p class="muted">
+    Building the future of finance through blockchain innovation.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <div class="eyebrow">LET'S CONNECT</div>
+  <h2>Build the Future With Us</h2>
+  <p class="muted">
+    For business enquiries, collaboration and
+    partnership discussions, contact our team.
+  </p>
+  <a class="button" href="mailto:zhuirichtechnologies@gmail.com">
+    Contact Zhuirich Technologies
+  </a>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Zhuirich Technologies. All rights reserved.
+  <br>Connecting Finance Without Boundaries.
+  <br>Blockchain Financing (B/F).
+</footer>
+
+</body>
+  </html>
+  
